@@ -48,13 +48,13 @@ public class cadAutenticacaoServlet extends HttpServlet {
 			JSONObject json = new JSONObject();
 			json.put("idPrestador", idPrestador);
 			json.put("idNome", idNome);
-			json.put("nmUsuaidDescricaorio", idDescricao);
+			json.put("idDescricao", idDescricao);
 			json.put("idQntHrs", idQntHrs);
 			json.put("idQntPessoas", idQntPessoas);
 			json.put("idMaterial", idMaterial);
 			json.put("idData", idData);
 			// Definindo o endpoint (URL) do web service
-			URL url = new URL("http://localhost/cadusuario.php");
+			URL url = new URL("http://localhost/Seg/cadastro.php");
 			// Criando o objeto para conexão HTTP
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			// Configurando a conexão
